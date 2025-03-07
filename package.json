@@ -1,8 +1,21 @@
 {
 	"name": "safe-event-emitter-ts",
-	"module": "index.ts",
+	"version": "0.1.0",
+	"license": "MIT",
 	"type": "module",
+	"authors": [
+		{
+			"name": "Shun Takahashi",
+			"email": "takahashi@shun.dev"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/shuntksh/safe-event-emitter-ts.git"
+	},
+	"files": ["dist"],
 	"main": "./dist/event-emitter.js",
+	"module": "./dist/event-emitter.js",
 	"types": "./dist/event-emitter.d.ts",
 	"exports": {
 		".": {
