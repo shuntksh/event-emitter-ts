@@ -41,7 +41,7 @@ export class EventEmitter<Events extends EventMap = Record<EventName, any[]>>
 	> = [];
 
 	/** Maximum number of handlers per event before warning */
-	private maxHandlersCount: number = 10;
+	private maxHandlersCount = 10;
 
 	/** Tree structure for storing wildcard event handlers */
 	private wildcardTree: Record<string | symbol, any> = {};
