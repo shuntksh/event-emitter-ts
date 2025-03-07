@@ -113,6 +113,10 @@ const emitter = new EventEmitter<MyEvents>({
 });
 ```
 
+## Credits
+
+This implementation is inspired by the awesome [EventEmitter2](https://github.com/EventEmitter2/EventEmitter2/tree/master).
+
 ## License
 
 MIT
