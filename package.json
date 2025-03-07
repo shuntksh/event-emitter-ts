@@ -2,10 +2,30 @@
   "name": "safe-event-emitter-ts",
   "module": "index.ts",
   "type": "module",
+  "main": "./dist/event-emitter.js",
+  "types": "./dist/event-emitter.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/event-emitter.js",
+      "require": "./dist/event-emitter.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "bun test",
+    "lint": "biome check --write .",
+    "lint:ci": "biome ci .",
+    "format": "biome format --write ."
+  },
   "devDependencies": {
-    "@types/bun": "^1.2.4"
+    "@biomejs/biome": "1.9.4",
+    "@types/bun": "1.2.4",
+    "fast-check": "3.23.2",
+    "fast-check-bun-test": "0.1.0",
+    "mitata": "^1.0.34",
+    "tsup": "8.4.0"
   },
   "peerDependencies": {
-    "typescript": "^5.8.2"
+    "typescript": "5.8.2"
   }
 }
